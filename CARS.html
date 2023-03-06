@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+ <!--SYED SHAHEER ALI-->   
+
+<!--BOOTSTRAP LINKS-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<!--Actual Code-->
+<html>
+    <head>
+         <!--CSS CODING HERE-->
+        <style>
+
+            
+        .Ground{
+                
+                position:relative;
+                bottom: 0;
+                left:0px;
+                width:100%;
+                background-color: rgb(242, 254, 254);
+            }
+            .Requirement{
+                background-color: whitesmoke;
+            }
+
+            .TableBorder{
+                border:2px solid black;
+            }
+
+            .CellBorder{
+                border:1px solid black;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!--NAV BAR HERE-->
+
+        <nav class="navbar shadow navbar-expand-lg navbar-light bg-light">
+            
+            <a class="navbar-brand" href="#">
+                <img src="data:image/jpeg;base64,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" width="30" height="30">
+                FAST Travel And Tours
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                   <li class="nav-item">
+                        <a class="nav-link " href="Main-Page.html">Home</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="PackageTour.html">Package Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="CARS.html">Car Rentals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="InformationDesk.html">Information Desk</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Nav Bar Completed-->
+
+
+
+
+        <!--Requirement Section-->
+        <div class="Requirement">
+            <span>
+            <h3>
+                What do you need to pick up the cars
+            </h3>
+            </span>
+            <span>
+                <img src="data:image/png;base64,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" alt="DriverLisence" height="20px" width="20px">
+                Driver Lisence
+            </span>
+            <span>
+                <img src="data:image/png;base64,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" height="20px" width="20px">
+                Passport
+            </span>
+            <span>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAq1BMVEX///8jO5FBwPMAKIrLz+E1vfOu4vkWMo7J7Pt7hrj8/Pz5+fn19fUQL40fOJCXn8Pt7e0qQpYySJnX2unm5ubw8PDg4+/p6el30Pafp8ttebDe3t4AGocADITDxtvc3Nzx8vgAH4gAF4bx+v7n9v0AKosAJIno6vNTYqNndK1dyPS+5/rU7/uI1Pen3/m/6PsAAIK9wtqCjLpBU52PmMGutdJNXaG1utVzfrG4FGI8AAAEOUlEQVR4nO3b8VuaQBgHcBSMqTuM2Fg2c+ASq7VWZqv//y/bnQIeCAHjddex7+cXYS173m93x3v3mGEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICuvt99IPBddRmETm4HNG5/qC6FyF1/0KcyOFddDYkTukREKD9V10PgB2kkPJQ71RW1dkUcSRcGyjl1Jv2+6pLaIh8m3Eh1US3d/9+Z3J+nfvGldXdFn0j/VnWhDdymQ2Lw4SjrSPzmOq2x+xAGVzyhI0XSH5yoLrS+K6kF5/sboma+gEb9ydX9SYpnIt3Ruu/SRhAAylj/wkp1lY34D+bxPXiqy2xkbvaOzw5Ul9nIhDlvI4jEOVNdZTOv7tnbCDKxb1RXSYxgoLCJ6iJoBWH7TJaPqqugZRGswaavuooaRlzyKq5GpYxn1j4TZ6y64Gor23UZbxnWjuu69tTwmVuqfSI950l1wTVYkeOE/Hf3JJ61kWU8mkd9FNtD1QXXMGW7lmE7LaKVsSGYH29gU9UF13AzM2e8ZfAvI9OMZoZxHWZb8V1ELHv790xLdcE1+J7n8V1Z4G0ZhpezXVfZc+a2haVeO8Bi2xDCILmdtsvE6SkrhNDazlTyatcs3palq7NzrbAUMr95Pc5+j/JU7+GzvL6Qucl32RuFpVQZbyYlNuJ8Y5reutvfbnpfb5gsX7I/LUhmHHtWUm091oKVWPBMRvvb3ZDP3lZOnIPGrBcPFPM9Hyg9L8sKYgFvbsNatZdmchGsBPGDthd+8tPEm79bQ9MuxsR6Og+z/9g0FDYTIrEFDhfiKgnLVV33WybDdbGhaDTnua82jMReTwUWvhjB9uoinjodOlAaNxwoy2D7bR6bxUvqJn6DDh0oeQ3PTVzLsyzLN3xnNhFX3u9kie3OgdJLw+bVvuQe+JhYuQtxuUjaEy0OlFKB7/ur3cuB1brZ3LFfrTknHjuBuJinmyRbo08oGcbFLFrwHvN1FhVouJywXMeWzj0tDpT2zpzecl67da/IJH9GchOHqsWBUmrMnF7EJ3tIEInY1Uxl12lnr8OBUsrjrf7l7iXRZsTYmd1C+k5aHCjtjTIvAsUhfY4ZKKmNTsvTowKaLbEF6MeJmX8eaceLqqtsRP9hQvRcliLRq4ktNg9JI4n0euiU2ERkI8VZuh0YJcKjG7GSo6dGWNTrziHByJoMCUwtrfZ+AAAA783+U37jCtLnATsnl8BH2edimf+TT0l1PW3IUeQzOJV8yZK/dJoPSQpHdXmNSXlkwpBT+FRBjigTjZbBFCci5ZHW/TX2LRHfZ4ORc5FS0S+Uw1FSFEqaiuxTRSRaZmLIsRTNnor5k1tbymaOXonEMk+coofNaYnCh5DuaeQdtiQfqx00K6qrOLLyv9jocq8GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACV/gAp/6F7PeSbgAAAAABJRU5ErkJggg==" height="30px" width="30px">
+                Credit Card
+            </span>
+        </div>
+
+        <!--Requirement Completed-->
+
+
+        <!--HAVING A BACKGROUND-->
+        <DIV>
+          
+            <img src="https://th.bing.com/th/id/OIP.Th6zrMGRlHp-CgBjVipZ_wHaE8?w=250&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7" height="300px" alt="" style="margin-top: 20px;">
+            <div style="background-color: gray; ; height:400px; margin-top:-250px; z-index: 2px; ">
+            </div>
+            <div style="margin-top:-300px; margin-right: 10%; float:right; z-index: 2px;">
+                <br>
+                
+                <H3>
+                    Book A CAR
+                </H3>
+                
+            </div>
+
+            <p style="margin-top: -100px;">
+                we also rent out cars. Sometimes customers already have a plan of
+                travel with them and only need conveyance from us.
+                We have many models of cars like Honda, Hyundai, Tata, Maruti and Toyota
+                and various types like small size, full size, luxury and minivan.
+            </p>
+            
+        </DIV>
+
+
+        <DIV style="background-color: gainsboro;">
+
+        <!--Available Cars-->
+        <div class="card-group" style="width:100%" >
+            <div class="card" >
+              <img src="https://th.bing.com/th/id/OIP.CVdw-zcuVc8qDtz9ys5JjgHaE8?w=302&h=202&c=7&r=0&o=5&dpr=1.4&pid=1.7" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Toyota</h5>
+                <p class="card-text">2022 Model, 6 people Capacity, AC</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://th.bing.com/th/id/OIP.y_gBd1ngJY37Nb4w1dzhbwHaE6?w=277&h=184&c=7&r=0&o=5&dpr=1.4&pid=1.7" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Suzuki</h5>
+                <p class="card-text">2022 Model, 4 people Capacity, AC</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://th.bing.com/th/id/OIP.jy6XojPv3njcW1MO1y8WUQHaFj?w=243&h=182&c=7&r=0&o=5&dpr=1.4&pid=1.7" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Hummer</h5>
+                <p class="card-text">2022 Model, 6 people Capacity, No AC</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+
+
+
+        <!--Adding a booking form-->
+        <form class="row gx-3 gy-2 align-items-center">
+            <div class="col-sm-3">
+              <label class="visually-hidden" for="specificSizeInputName">Name</label>
+              <input type="text" class="form-control" id="specificSizeInputName" placeholder="Jane Doe">
+            </div>
+            <div class="col-sm-3">
+              <label class="visually-hidden" for="specificSizeInputGroupUsername">NUMBER</label>
+              <div class="input-group">
+             
+                <input type="text" class="form-control" id="specificSizeInputGroupUsername" placeholder="+01 123 12312">
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <label class="visually-hidden" for="specificSizeSelect">Preference</label>
+              <select class="form-select" id="specificSizeSelect">
+                <option selected>Choose...</option>
+                <option value="YES">AC</option>
+                <option value="NO">NO AC</option>
+               
+              </select>
+            </div>
+            <div class="col-auto">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                <label class="form-check-label" for="autoSizingCheck2">
+                  Driver Required
+                </label>
+              </div>
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary">BOOK CAR</button>
+            </div>
+          </form>
+
+
+        </DIV>
+
+                  <!--ADDING SOME SPACE-->
+        <br>
+        <br>
+
+        <!--Table Section-->
+        <div>
+        <H3>Cancelation Charges</H3>
+        <table class="TableBorder">
+            <tr>
+              <th class="CellBorder">Day</th>
+              <th class="CellBorder">Amount Returned</th>
+            </tr>
+            <tr>
+              <td class="CellBorder">1 day</td>
+              <td class="CellBorder" style="text-align: right;">75%</td>
+            </tr>
+            <tr>
+                <td class="CellBorder">2 day</td>
+                <td style="text-align: right;">80%</td>
+            </tr>
+            <tr>
+                <td class="CellBorder">3 day</td>
+                <td class="CellBorder" style="text-align: right;">85%</td>
+            </tr>
+            <tr class="CellBorder">
+                <td class="CellBorder" >4 day</td>
+                <td style="text-align: right;">90%</td>
+            </tr>
+            <tr class="CellBorder">
+                <td class="CellBorder">5 day+</td>
+                <td style="text-align: right;">95%</td>
+            </tr>
+        </table>
+        </div>
+        <!--Table Completed-->
+
+        
+        <!--Footer Content-->
+        <div class="Ground" >
+
+            <B>
+                Associated width
+            </B>
+            <br>
+            <div style="align-content: end;">
+                <img src="https://th.bing.com/th/id/OIP.bdAsEsXsUaOtnEpCDO7TwAHaCh?w=347&h=119&c=7&r=0&o=5&dpr=1.4&pid=1.7" alt="PIA" height="50px";>
+                <img src="https://th.bing.com/th/id/OIP.thpN19kJEfJeiwCME9ACLwHaFj?w=259&h=194&c=7&r=0&o=5&dpr=1.4&pid=1.7" height="50px">
+            </div>
+
+
+        </div>
+       <!--Footer Finished-->
+
+    </body>
+</html>

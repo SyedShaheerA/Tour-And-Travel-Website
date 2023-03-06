@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!--Syed Shaheer Ali-->
+
+<!--BOOTSTRAP LINKS-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<html>
+    <head>
+        <!--CSS CODING HERE-->
+        <style>
+            .Ground{
+                
+                
+                bottom: 0;
+                margin-bottom:-1100px;
+                left:0px;
+                width:100%;
+                background-color: rgb(242, 254, 254);
+            }
+        </style>
+
+    </head>
+
+
+    <body>
+
+
+        <!--NAV BAR HERE-->
+
+        <nav class="navbar shadow navbar-expand-lg navbar-light bg-light">
+            
+            <a class="navbar-brand" href="#">
+                <img src="data:image/jpeg;base64,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" width="30" height="30">
+                FAST Travel And Tours
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                   <li class="nav-item">
+                        <a class="nav-link" href="Main-Page.html">Home</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link active" href="PackageTour.html">Package Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="CARS.html">Car Rentals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="InformationDesk.html">Information Desk</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Nav Bar Completed-->
+
+
+        <!--BODY BAR STARTED-->
+        <div>
+            <!--START PAGE-->
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width:1500px;">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://th.bing.com/th/id/OIP._quDjyXEA6Ae-F5M3XcxSAHaEK?w=281&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://th.bing.com/th/id/OIP.955arxWEYswuGDFPRK93WgHaEL?w=303&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7" alt="Second slide">
+                  </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+
+
+
+
+
+            <!--PACKAGES TOUR-->
+            <br>
+            <DIV style="background-color:rgb(205, 229, 250); text-align: center;">
+                
+                    ACTIVITY BASED TOUR
+                
+            </DIV>
+            
+            <div class="card-deck" style="background-color: aliceblue; width:100%; height: 100%;">
+                
+                <div class="card">
+                  <img class="card-img-top" src="https://th.bing.com/th/id/OIP.iIZ4mOrsyBk5y7wczzDDTAHaE6?w=272&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Tracks Package A</h5>
+                    <p class="card-text">Have fun exploring the cities and nature while passing through some insane tracks, This is an area wise tour, Cycling through some of the historic places from that history</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://th.bing.com/th/id/OIP.xrCbIh0_mxgWDuyGosFcwQHaEK?w=281&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Camps Package B</h5>
+                    <p class="card-text">Want to just come and relax camping is the best. , This is an country wise tour, Camping through some of the historic places from that history</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://th.bing.com/th/id/OIP.vkTsLClBrNPQ7gLKnv_bRwHaE8?w=288&h=192&c=7&r=0&o=5&dpr=1.4&pid=1.7" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">SAFARI Package C</h5>
+                    <p class="card-text">This is a wider Safari with supporting safi below as a natural lead-in to additional content. This safari has even longer content than the first to show that equal height action. , This is an Country wise tour, Safaring through some of the historic places from that history</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+              <br>
+
+              <!--FOOD STYLE-->
+              <div style="background-color: aliceblue;">
+                <H4>FOOD</H4>
+                WE PROVIDE FOOD SERVICES, AND BRIGHTEN YOUR TASTE BURDS WITH PAKISTANI COUSINE.
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width:200px;">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="https://th.bing.com/th/id/OIP.a86Qm12rotaFdATaGovILwHaFj?w=184&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7" alt="First slide" height="100px;">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://th.bing.com/th/id/OIP.IlHCTE6CC8SHn9hSKsHXmAHaE8?w=228&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7" alt="Second slide" height="100px;">
+                      </div>
+    
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+
+                  <ul style="margin-left:200px; margin-top: -100px;;">
+                    <li>
+                        biryani
+                    </li>
+                    <li>
+                        BarBQ
+                    </li>
+                    <li>
+                        FastFood
+                    </li>
+                    <li>
+                        Arabic Food
+                    </li>
+                  </ul>
+
+
+              </div>
+        </div>
+
+
+        <!--Adding a booking form-->
+        <form class="row gx-3 gy-2 align-items-center">
+          <div class="col-sm-3">
+            <label class="visually-hidden" for="specificSizeInputName">Name</label>
+            <input type="text" class="form-control" id="specificSizeInputName" placeholder="Jane Doe">
+          </div>
+          <div class="col-sm-3">
+            <label class="visually-hidden" for="specificSizeInputGroupUsername">NUMBER</label>
+            <div class="input-group">
+           
+              <input type="text" class="form-control" id="specificSizeInputGroupUsername" placeholder="+01 123 12312">
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <label class="visually-hidden" for="specificSizeSelect">Preference</label>
+            <select class="form-select" id="specificSizeSelect">
+              <option selected>Choose...</option>
+              <option value="a">A</option>
+              <option value="b">B</option>
+              <option value="c">C</option>
+            </select>
+          </div>
+          <div class="col-auto">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+              <label class="form-check-label" for="autoSizingCheck2">
+                CONFIRM
+              </label>
+            </div>
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary">BOOK Tour</button>
+          </div>
+        </form>
+
+
+        <!--Body Bar completed-->
+
+        <br>
+         <!--Footer Content-->
+         <div class="Ground">
+
+            <B>
+                Associated width
+            </B>
+            <br>
+            <div style="align-content: end;">
+                <img src="https://th.bing.com/th/id/OIP.bdAsEsXsUaOtnEpCDO7TwAHaCh?w=347&h=119&c=7&r=0&o=5&dpr=1.4&pid=1.7" alt="PIA" height="50px";>
+                <img src="https://th.bing.com/th/id/OIP.thpN19kJEfJeiwCME9ACLwHaFj?w=259&h=194&c=7&r=0&o=5&dpr=1.4&pid=1.7" height="50px">
+                
+            </div>
+            For Cancelation Call:
+            0330 3252112
+        </div>
+       <!--Footer Finished-->
+
+
+    </body>
+</html>
